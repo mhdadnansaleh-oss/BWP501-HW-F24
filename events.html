@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City events</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="navbar custom-navbar navbar navbar-expand-lg navbar-light fixed-top  mx-auto" style="background-color: #171717;">
+        <img src="assets/img/WhatsApp Image 2025-09-16 at 11.15.21 AM (Copy).jpeg" width="75em" class="" style="margin-left: 2em; margin-top: 0;">
+        <a class="btn text-center ms-4 mt-1" style="background-color: #1F1D1E; color: #B9AAFB;" href="#">City events</a>
+        <button class="navbar-toggler me-5 mx-auto" data-bs-toggle="collapse" data-bs-target="#x" style="background-color: #B9AAFB;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class=" navbar-nav collapse navbar-collapse ms-lg-5" id="x">
+            <li class="nav-item ms-4"><a href="index.html" class="btn text-center  " style="background-color: #1F1D1E ;color: #B9AAFB; width: 8em;">الصفحة الرئيسية</a></li>
+            <li class="nav-item ms-4"><a href="events.html" class="btn text-center" style="background-color: #1F1D1E ;color: #B9AAFB; width: 8em;">الفعاليات</a></li>
+            <li class="nav-item ms-4"><a href="event.html" class="btn text-center " style="background-color: #1F1D1E ;color: #B9AAFB; width: 8em;">تفاصيل الفعالية</a></li>
+            <li class="nav-item ms-4"><a href="about.html" class="btn text-center " style="background-color: #1F1D1E ;color: #B9AAFB; width: 8em;">الدليل</a></li>
+            <li class="nav-item ms-4"><a href="contact.html" class="btn text-center " style="background-color: #1F1D1E ;color: #B9AAFB; width: 8em;">إتصل بنا</a></li>
+        </ul>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 1em; margin-bottom: 2em;">
+        <input type="text" id="searchInput" placeholder="ابحث عن فعالية..." style="flex: 1; padding: 0.5em;">
+        <input type="date" id="dateFilter" style="padding: 0.5em;">
+
+        <select id="placeFilter" style="padding: 0.5em;">
+            <option value="">كل الأماكن</option>
+            <option value="المركز الثقافي">المركز الثقافي</option>
+            <option value="حديقة المدينة">حديقة المدينة</option>
+        </select>
+
+        <select id="typeFilter" style="padding: 0.5em;">
+            <option value="">All Types</option>
+            <option value="Cultural">Cultural</option>
+            <option value="Sports">Sport</option>
+            <option value="Musical">Musical</option>
+            <option value="Family">Family</option>
+            <option value="Adventures">Adventures</option>
+        </select>
+
+        <select id="ageFilter" style="padding: 0.5em;">
+            <option value="">كل الفئات العمرية</option>
+            <option value="أطفال">أطفال</option>
+            <option value="بالغين">شباب</option>
+            <option value="عائلة">عائلة</option>
+        </select>
+
+    </div>
+
+
+    <div class="container">
+        <h1 style="text-align:center; margin-bottom:20px;"> Cultral Events </h1>
+
+        <section class="grid" aria-label="Cultral Events" id="CLT">
+            <!-- Card 1 -->
+            <a href="event.html#CLTs1" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Cultural" data-date="2025-06-24" data-place="حديقة المدينة" data-age="بالغين" data-title="Cultral Events">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Cultral event No1</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+
+            <!-- Card 2 -->
+            <a href="event.html#CLTs2" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Cultural" data-date="2025-06-25" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Cultral event No2</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="event.html#CLTs3" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Cultural" data-date="2025-06-25" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Cultral event No3</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="event.html#CLTs4" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Cultural" data-date="2025-06-25" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Cultral event No4</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+
+        </section>
+    </div>
+    <div class="container">
+        <h1 style="text-align:center; margin-bottom:20px;"> Sports Events </h1>
+
+        <section class="grid" aria-label="Sports Events" id="SPRT">
+            <!-- Card 1 -->
+            <a href="event.html#eventid" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Sports" data-date="2025-06-24" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Sports event No1</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+
+            <!-- Card 2 -->
+            <a href="event.html#eventid" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Sports" data-date="2025-06-25" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Sports event No2</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="event.html#eventid" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Sports" data-date="2025-06-25" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Sports event No3</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="event.html#eventid" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Sports" data-date="2025-06-24" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Sports event No4</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+
+        </section>
+    </div>
+    <div class="container">
+        <h1 style="text-align:center; margin-bottom:20px;"> Musical Events </h1>
+
+        <section class="grid" aria-label="Musical Events" id="MSC">
+            <!-- Card 1 -->
+            <a href="event.html#eventid" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Musical" data-date="2025-06-25" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Musical event No1</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+
+            <!-- Card 2 -->
+            <a href="event.html#eventid" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Musical" data-date="2025-06-25" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Musical event No2</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="event.html#eventid" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Musical" data-date="2025-06-24" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Musical event No3</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="event.html#eventid" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Musical" data-date="2025-06-25" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Musical event No4</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+
+        </section>
+    </div>
+    <div class="container">
+        <h1 style="text-align:center; margin-bottom:20px;"> Family Events </h1>
+
+        <section class="grid" aria-label="Family Events" id="FAM">
+            <!-- Card 1 -->
+            <a href="event.html#eventid" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Family" data-date="2025-06-25" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Family event No1</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+
+            <!-- Card 2 -->
+            <a href="event.html#eventid" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Family" data-date="2025-06-24" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Family event No2</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="event.html#eventid" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Family" data-date="2025-06-25" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Family event No3</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="event.html#eventid" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Family" data-date="2025-06-25" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Family event No4</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+
+        </section>
+    </div>
+    <div class="container">
+        <h1 style="text-align:center; margin-bottom:20px;"> Adventures </h1>
+
+        <section class="grid" aria-label="Adventures" id="ADV">
+            <!-- Card 1 -->
+            <a href="event.html#ADVs1" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Adventures" data-date="2025-06-25" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventure No1">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Adventure No1</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+
+            <!-- Card 2 -->
+            <a href="event.html#ADVs2" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Adventures" data-date="2025-06-25" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Adventure No2</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="event.html#ADVs3" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Adventures" data-date="2025-06-25" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Adventure No3</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="event.html#ADVs4" style="text-decoration: none; color: inherit;">
+                <article class="card" data-type="Adventures" data-date="2025-06-24" data-place="المركز الثقافي" data-age="أطفال" data-title="Adventures">
+                    <img src="image_870x_68b8a35a40a19.jpg" alt="صورة" class="card__image" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;" />
+
+                    <div class="card__body" style="padding: 1.5em; display: flex; flex-direction: column; gap: 1em;">
+                        <h2 class="card__title" style="font-size: clamp(1.2em, 2vw, 1.8em); margin: 0;">Adventure No4</h2>
+
+                        <div class="card__meta" style="font-size: clamp(0.9em, 1.5vw, 1em); display: flex; flex-wrap: wrap; gap: 0.5em;">
+                            <span class="badge" aria-label="الوقت">25 يونيو 2025</span>
+                            <span class="badge" aria-label="المكان">المركز الثقافي</span>
+                        </div>
+
+                        <p class="card__desc" style="font-size: clamp(1em, 1.5vw, 1.2em); line-height: 1.6;">
+                            مهرجانات الأطفال هي مزيج بين الترفيه والمرح الذي يحقق أهداف تربوية وتعليمية...
+                        </p>
+                    </div>
+                </article>
+            </a>
+
+
+        </section>
+    </div>
+    <footer>
+        <h1>:Contacts</h1>
+        <p style="font-size:20px; align-content:center;"> E-Mail: city.events@gmail.com <img src="assets\img\at-sign-1083508_1920.png" width="20" height="20" /> </p>
+        <p style="font-size:20px; align-content:center;"> Facebook: City Events <img src="assets\img\social-3434836_1920.png" width="20" height="20" /> </p>
+        <p style="font-size:20px; align-content:center;"> Telegram: @CityEvents <img src="assets\img\telegram-5662082_1920.png" width="20" height="20" /> </p>
+        <p style="font-size:20px; align-content:center;"> Whatsapp: 0966621277 <img src="assets\img\whatsapp-873316_1920.png" width="20" height="20" /> </p>
+    </footer>
+    <script src="assets/js/js-bootstrap/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const dateFilter = document.getElementById('dateFilter');
+        const placeFilter = document.getElementById('placeFilter');
+        const typeFilter = document.getElementById('typeFilter');
+        const ageFilter = document.getElementById('ageFilter');
+        const cards = document.querySelectorAll('.card');
+
+        function filterCards() {
+            const searchText = searchInput.value.toLowerCase();
+            const selectedDate = dateFilter.value;
+            const selectedPlace = placeFilter.value;
+            const selectedType = typeFilter.value;
+            const selectedAge = ageFilter.value;
+
+            cards.forEach(card => {
+                const title = card.dataset.title?.toLowerCase() || '';
+                const date = card.dataset.date || '';
+                const place = card.dataset.place || '';
+                const type = card.dataset.type || '';
+                const age = card.dataset.age || '';
+
+                const matchesSearch = title.includes(searchText);
+                const matchesDate = selectedDate ? date === selectedDate : true;
+                const matchesPlace = selectedPlace ? place === selectedPlace : true;
+                const matchesType = selectedType ? type === selectedType : true;
+                const matchesAge = selectedAge ? age === selectedAge : true;
+
+                const showCard = matchesSearch && matchesDate && matchesPlace && matchesType && matchesAge;
+                card.style.display = showCard ? 'block' : 'none';
+            });
+        }
+
+        searchInput.addEventListener('input', filterCards);
+        dateFilter.addEventListener('change', filterCards);
+        placeFilter.addEventListener('change', filterCards);
+        typeFilter.addEventListener('change', filterCards);
+        ageFilter.addEventListener('change', filterCards);
+    </script>
+
+
+
+</body>
+</html>

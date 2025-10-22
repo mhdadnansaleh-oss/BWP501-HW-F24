@@ -1,0 +1,194 @@
+﻿.1 {
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+body {
+    background-color: springgreen;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #04AA6D;
+}
+/* Green */
+.button2 {
+    background-color: #008CBA;
+}
+/* Blue */
+.button3 {
+    background-color: #f44336;
+}
+/* Red */
+.button4 {
+    background-color: #e7e7e7;
+    color: black;
+}
+/* Gray */
+.button5 {
+    background-color: #555555;
+}
+/* Black */
+
+:root {
+    --card-bg: #ffffff;
+    --card-border: #e2e8f0;
+    --card-radius: 14px;
+    --shadow: 0 6px 18px rgba(0,0,0,.08);
+    --primary: #2563eb;
+    --text: #0f1020;
+    --muted: #6b7280;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans Arabic", "Lateef", sans-serif;
+    background: #f7f7fb;
+    color: var(--text);
+    direction: rtl;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+.grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5em;
+}
+
+
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+
+.card__body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.card__title {
+    font-size: clamp(1.2em, 2vw, 1.8em);
+}
+
+.card__desc {
+    font-size: clamp(1em, 1.5vw, 1.2em);
+}
+
+
+.card__meta {
+    font-size: 0.9rem;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #eef2ff;
+    color: #3730a3;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.card__desc {
+    font-size: 0.95rem;
+    color: #374151;
+    line-height: 1.4;
+}
+
+article {
+    margin: 0 auto;
+}
+
+/* (تحسينات صغيرة عند المرور بالفأرة على الكارد ) */
+.card:hover {
+    transform: translateY(-2px);
+    transition: transform .2s ease;
+}
+.button:hover {
+    transform: translateY(-2px);
+    transition: transform .2s ease;
+}
+
+@media (max-width: 600px) {
+    .card__image {
+        height: 160px;
+    }
+}
+
+:root {
+    --bg: #f7f7f7;
+    --card: #ffffff;
+    --text: #1f2937;
+    --muted: #5b616b;
+    --primary: #1e3a8a;
+    --primary-2: #3b82f6;
+    --secondary: #64748b;
+    --border: #e5e7eb;
+    --radius: 12px;
+    --gap: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+footer{
+    background-color: grey;
+    place-content: center;
+    justify-items:center;
+}
